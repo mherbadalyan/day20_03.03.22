@@ -46,36 +46,44 @@ public class Dice {
         int key = new Random().nextInt(6) + 1;
 
         switch (key) {
-            case 1 -> dice[1][1] = 'O';
-            case 2 -> {
+            case 1: {
+                dice[1][1] = 'O';
+                break;
+            }
+            case 2: {
                 dice[0][0] = 'O';
                 dice[2][2] = 'O';
+                break;
             }
-            case 3 -> {
+            case 3: {
                 dice[0][0] = 'O';
                 dice[1][1] = 'O';
                 dice[2][2] = 'O';
+                break;
             }
-            case 4 -> {
+            case 4: {
                 dice[0][0] = 'O';
                 dice[2][0] = 'O';
                 dice[0][2] = 'O';
                 dice[2][2] = 'O';
+                break;
             }
-            case 5 -> {
+            case 5: {
                 dice[0][0] = 'O';
                 dice[2][0] = 'O';
                 dice[1][1] = 'O';
                 dice[0][2] = 'O';
                 dice[2][2] = 'O';
+                break;
             }
-            case 6 -> {
+            case 6: {
                 dice[0][0] = 'O';
                 dice[1][0] = 'O';
                 dice[2][0] = 'O';
                 dice[0][2] = 'O';
                 dice[1][2] = 'O';
                 dice[2][2] = 'O';
+                break;
             }
         }
 

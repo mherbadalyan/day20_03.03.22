@@ -55,10 +55,10 @@ public class Game {
         }
 
         if (player.getHealth() == 0) {
-            System.out.println("Your opponent win.");
+            System.out.println("You lose.");
         }
         else {
-            System.out.println("You win");
+            System.out.println("You win.");
         }
     }
 }

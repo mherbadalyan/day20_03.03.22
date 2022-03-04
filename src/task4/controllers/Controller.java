@@ -40,10 +40,9 @@ public class Controller {
     }
 
     private void menuAndPlayerSelecting() {
-        System.out.println("""
-                Welcome to game Mortal Combat. Please select player.
-                1. Archer
-                2. Samurai
-                3. Magician""");
+        System.out.println("Welcome to game Mortal Combat. Please select player.\n" +
+                           "1. Archer\n" +
+                           "2. Samurai\n" +
+                           "3. Magician");
     }
 }
