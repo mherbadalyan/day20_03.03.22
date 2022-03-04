@@ -36,20 +36,29 @@ public class Game {
                 keyHit = scanner.nextLine();
             } while (!Helper.checkKeyHit(keyHit));
 
-            if (player.getHealth() > 0)
+            if (player.getHealth() > 0) {
                 opponent.setHealth(opponent.getHealth() - (new Random().nextInt(player.getMaxPower())));
-            if (opponent.getHealth() <= 0) opponent.setHealth(0);
+            }
+            if (opponent.getHealth() <= 0) {
+                opponent.setHealth(0);
+            }
             System.out.println(opponent.getName() + " health : " + opponent.getHealth());
 
             if (opponent.getHealth() > 0) {
                 System.out.println("\nNow your opponent is hitting\n");
                 player.setHealth(player.getHealth() - (new Random().nextInt(opponent.getMaxPower())));
             }
-            if (player.getHealth() <= 0) player.setHealth(0);
+            if (player.getHealth() <= 0) {
+                player.setHealth(0);
+            }
             System.out.println(player.getName() + " health : " + player.getHealth());
         }
 
-        if (player.getHealth() == 0) System.out.println("Your opponent win.");
-        else System.out.println("You win");
+        if (player.getHealth() == 0) {
+            System.out.println("Your opponent win.");
+        }
+        else {
+            System.out.println("You win");
+        }
     }
 }

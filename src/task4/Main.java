@@ -1,5 +1,4 @@
 package task4;
-
 import task4.controllers.Controller;
 
 public class Main {

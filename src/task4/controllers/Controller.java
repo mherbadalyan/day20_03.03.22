@@ -32,7 +32,7 @@ public class Controller {
 
     private String chooseWarrior(String inputPlayer) {
 
-        while (!Helper.checkInputPlayaer(inputPlayer)) {
+        while (!Helper.checkInputPlayer(inputPlayer)) {
             System.out.println("Your choice is incorrect.Please try again.");
             inputPlayer = scanner.nextLine();
         }
